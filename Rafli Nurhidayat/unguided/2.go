@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x int
+
+	fmt.Scan(&x)
+
+	hasil := "bukan"
+
+	if x%2 == 0 && x < 0 {
+		hasil = "genap negatif"
+	}
+
+	fmt.Println(hasil)
+}
